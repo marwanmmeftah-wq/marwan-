@@ -1,37 +1,75 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
-<title>موقعي التجريبي</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موقعي الشخصي</title>
 
 <style>
 
 body{
-font-family: Arial;
-text-align: center;
-background:#f2f2f2;
+font-family: Tahoma, Arial;
 margin:0;
+background:#f5f5f5;
+color:#333;
 }
+
+/* رأس الموقع */
 
 header{
-background:#333;
+background:#1e88e5;
 color:white;
 padding:20px;
+text-align:center;
 }
 
-section{
-padding:40px;
+nav{
+margin-top:10px;
 }
 
-button{
-background:#007bff;
+nav a{
 color:white;
-border:none;
-padding:12px 20px;
-font-size:16px;
-cursor:pointer;
-border-radius:6px;
+margin:0 10px;
+text-decoration:none;
+font-size:18px;
 }
+
+/* القسم الرئيسي */
+
+.hero{
+padding:60px 20px;
+text-align:center;
+background:white;
+}
+
+.hero h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+/* الخدمات */
+
+.services{
+padding:40px;
+text-align:center;
+}
+
+.service-box{
+background:white;
+padding:20px;
+margin:15px;
+border-radius:8px;
+display:inline-block;
+width:250px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* زر واتساب */
 
 .whatsapp{
 display:inline-block;
@@ -39,34 +77,80 @@ margin-top:20px;
 background:#25D366;
 color:white;
 padding:12px 20px;
-text-decoration:none;
 border-radius:6px;
+text-decoration:none;
+font-size:18px;
+}
+
+/* التذييل */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>مرحبا بكم في موقعي</h1>
+
+<h1>موقعي الشخصي</h1>
+
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#">الخدمات</a>
+<a href="#">تواصل معنا</a>
+</nav>
+
 </header>
 
-<section>
+<section class="hero">
 
-<p>هذا موقع تجريبي على GitHub</p>
+<h1>مرحبا بكم في موقعي</h1>
 
-<button onclick="alert('اهلا بك في الموقع')">
-اضغط هنا
-</button>
-
-<br><br>
+<p>
+هذا موقع تجريبي تم إنشاؤه باستخدام HTML
+ويمكن نشره مجاناً على GitHub
+</p>
 
 <a class="whatsapp" href="https://wa.me/967771234567">
 تواصل عبر واتساب
 </a>
 
 </section>
+
+<section class="services">
+
+<h2>خدماتنا</h2>
+
+<div class="service-box">
+<h3>تصميم مواقع</h3>
+<p>تصميم مواقع حديثة وسريعة</p>
+</div>
+
+<div class="service-box">
+<h3>تطوير تطبيقات</h3>
+<p>بناء تطبيقات ويب احترافية</p>
+</div>
+
+<div class="service-box">
+<h3>استشارات تقنية</h3>
+<p>مساعدتك في بناء مشروعك التقني</p>
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 جميع الحقوق محفوظة</p>
+
+</footer>
 
 </body>
 </html>
